@@ -45,6 +45,7 @@ defmodule Practice.Calc do
     end
   end
 
+  # This algorithm is based off http://csis.pace.edu/~wolf/CS122/infix-postfix.htm
   defp to_postfix(tag_tokens, op_stack, result_tokens) do
     if (tag_tokens == []) do
       if (op_stack == []) do
