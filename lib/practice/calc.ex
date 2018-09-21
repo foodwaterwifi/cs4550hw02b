@@ -16,7 +16,7 @@ defmodule Practice.Calc do
     (text == "+" or text == "-" or text == "*" or text == "-")
   end
 
-  # Compares two operators. Returns true if the left operator has higher precedence than the right.
+  # Compares two operators. Returns 1 if the left operator has higher precedence than the right. 0 if same. -1 otherwise.
   defp compare_ops(left, right) do
     if ((left == "+" or left == "-") and (right == "+" or right == "-")) do
       0
